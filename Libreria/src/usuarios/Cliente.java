@@ -2,13 +2,13 @@
 package usuarios;
 import java.time.LocalDate;
 
-import utils.Rol;
+import usuarios.utils.Rol;
 
 public class Cliente extends Usuario {
     private LocalDate fecha_Union;
     
-    public Cliente(String nombre, String apellido, String telefono) {
-        super(nombre, apellido, telefono, Rol.CLIENTE);
+    public Cliente(String nombre, String apellido, String telefono,String nombreUsuario, String contrasena) {
+        super(nombre, apellido, telefono, Rol.CLIENTE, nombreUsuario, contrasena);
         this.fecha_Union=LocalDate.now(); //Asigna la fecha del dia actual.
     }
     

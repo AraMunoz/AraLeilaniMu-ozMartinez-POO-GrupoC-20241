@@ -1,7 +1,7 @@
 
 package usuarios;
 
-import utils.Rol;
+import usuarios.utils.Rol;
 
 public class Usuario {
     private static int CANTIDAD_USUARIOS = 1;
@@ -10,13 +10,17 @@ public class Usuario {
     private String apellido;
     private String telefono;
     private Rol rol; //Cliente, asistente, gerente.
+    private String nombreUsuario;
+    private String contrasena;
 
-    public Usuario(String nombre, String apellido, String telefono, Rol rol) {
+    public Usuario(String nombre, String apellido, String telefono, Rol rol, String nombreUsuario, String contrasena) {
         this.id=CANTIDAD_USUARIOS;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.rol = rol;
+        this.contrasena= contrasena;
+        this.nombreUsuario= nombreUsuario;
         CANTIDAD_USUARIOS++;
     }
     
@@ -52,6 +56,15 @@ public class Usuario {
 
     public Rol getRol() {
         return rol;
+        
+    }
+
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public String getContrasena() {
+        return contrasena;
     }
     
     

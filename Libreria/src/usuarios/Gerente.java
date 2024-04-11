@@ -1,14 +1,14 @@
 
 package usuarios;
 
-import utils.Rol;
+import usuarios.utils.Rol;
 
 public class Gerente extends Usuario{
     private Double sueldo;
     private String INE;
 
-    public Gerente(Double sueldo, String INE, String nombre, String apellido, String telefono, Rol rol) {
-        super(nombre, apellido, telefono, rol);
+    public Gerente(Double sueldo, String INE, String nombre, String apellido, String telefono, Rol rol,String nombreUsuario, String contrasena) {
+        super(nombre, apellido, telefono, rol,nombreUsuario, contrasena);
         this.sueldo = sueldo;
         this.INE = INE;
     }

@@ -2,15 +2,15 @@
 package usuarios;
 
 import java.time.LocalDate;
-import utils.Rol;
+import usuarios.utils.Rol;
 
 public class Asistente extends Usuario {
     private Double sueldo;
     private LocalDate fechaInicio;
     private String RFC;
    
-    public Asistente(Double sueldo, String RFC, String nombre, String apellido, String telefono, Rol rol) {
-        super(nombre, apellido, telefono, rol);
+    public Asistente(Double sueldo, String RFC, String nombre, String apellido, String telefono, Rol rol,String nombreUsuario, String contrasena) {
+        super(nombre, apellido, telefono, rol,nombreUsuario, contrasena);
         this.sueldo = sueldo;
         this.fechaInicio = LocalDate.now();
         this.RFC = RFC;
