@@ -9,11 +9,12 @@ public class Asistente extends Usuario {
     private LocalDate fechaInicio;
     private String RFC;
    
-    public Asistente(Double sueldo, String RFC, String nombre, String apellido, String telefono, Rol rol,String nombreUsuario, String contrasena) {
-        super(nombre, apellido, telefono, rol,nombreUsuario, contrasena);
+    public Asistente(Double sueldo, String RFC, String nombre, String apellido, String telefono,String nombreUsuario, String contrasena) {
+        super(nombre, apellido, telefono, Rol.ASISTENTE,nombreUsuario, contrasena);
         this.sueldo = sueldo;
         this.fechaInicio = LocalDate.now();
         this.RFC = RFC;
+        
        
     }
     

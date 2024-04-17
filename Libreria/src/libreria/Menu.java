@@ -1,16 +1,23 @@
 package libreria;
-
+/*****Realizar el registro cliente, libros y consualta de clientes y libros.
+ --Tratar de almacenar el usuario en sesion en la clase Usuario en sesion y verificar su comportamiento(Si se guarda o no)
+ */
 import java.util.*;
+import usuarios.Cliente;
 import usuarios.Usuario;
+import utils.UsuarioEnSesion;
 public class Menu {
     private Libreria libreria = new Libreria();
+   // ArrayList<Cliente> clientes = new ArrayList<Cliente>();
     private Scanner leer = new Scanner(System.in);
     public  void iniciarSesion(){
         boolean datosCorrectos = false;
         
         do{
         System.out.println("\n Bienvenido al Sistema de la Biblioteca ");
-        System.out.println("Inicia sesion para continuar: ");
+        
+        System.out.println("Pulsa enter para iniciar sesion: ");
+        leer.nextLine();
         System.out.print("Ingresa tu usuario: ");
         String usuario = leer.nextLine();
         System.out.print("Ingresa tu contrasena: ");
@@ -18,7 +25,10 @@ public class Menu {
         Usuario usuarioActual = libreria.verificarInicioSesion(usuario, contrasena);
         if(usuarioActual!= null){
             datosCorrectos = true;
-            seleccionarMenu(usuarioActual);
+          
+           UsuarioEnSesion.obtenerInstancia().setUsuarioActual(usuarioActual);
+           
+            seleccionarMenu();
             
         }
         else{
@@ -28,7 +38,8 @@ public class Menu {
         
     }
     
-    public void seleccionarMenu(Usuario usuario){
+    public void seleccionarMenu(){
+        Usuario usuario = UsuarioEnSesion.obtenerInstancia().getUsuarioActual();
         switch(usuario.getRol()){
             case CLIENTE: mostrarMenuCliente();
                 break;
@@ -45,19 +56,28 @@ public class Menu {
         System.out.println("***Bienvenido al menu del cliente***");
         System.out.println("1. Ver libros");
         System.out.println("2. Consualtar rentas");
-        System.out.println("3. Cerrar sesion");
+        System.out.println("3. Mostrar mis datos");
+         System.out.println("4. Editar mi informacion");
+        System.out.println("5. Cerrar sesion");
         System.out.println("Ingresa la opcion: ");
         int opcion = leer.nextInt();
+        do{
         switch(opcion){
             case 1: 
                 break;
             case 2: 
                 break;
             case 3: 
+                break;
+           case 4: 
+                break;
+            case 5: 
                 System.out.println("Cerrando sesion...");
+                UsuarioEnSesion.obtenerInstancia().cerrarSesion();
                 this.iniciarSesion();
                 break;
             }
+        }while(opcion!=5);
     }
     private void mostrarMenuAsistente(){
         int opcion;
@@ -79,10 +99,12 @@ public class Menu {
             case 1: 
                 break;
             case 2: 
+                libreria.registrarCliente();
                 break;
             case 3: 
                 break;
             case 4: 
+                libreria.mostrarCliente();
                 break;
             case 5: 
                 break;
@@ -96,6 +118,7 @@ public class Menu {
                 break;
             case 10: 
                 System.out.println("Cerrando sesion...");
+                UsuarioEnSesion.obtenerInstancia().cerrarSesion();
                 this.iniciarSesion();
                 break;
             }
@@ -127,14 +150,18 @@ public class Menu {
             case 1: 
                 break;
             case 2: 
+                libreria.registrarCliente();
                 break;
             case 3: 
+                libreria.registrarAsistente();
                 break;
             case 4: 
                 break;
             case 5: 
+                libreria.mostrarCliente();
                 break;
             case 6: 
+                libreria.mostrarAsistentes();
                 break;
             case 7: 
                 break;
@@ -142,13 +169,28 @@ public class Menu {
                 break;
             case 9: 
                 break;
+            case 10: 
+            break;
+            case 11: 
+            break;
+            case 12: 
+                libreria.eliminarCliente();
+            break;
+            case 13: 
+            break;
+            case 14:
+                libreria.eliminarAsistente();
+            break;
             case 15: 
                 System.out.println("Cerrando sesion...");
+                UsuarioEnSesion.obtenerInstancia().cerrarSesion();
                 this.iniciarSesion();
                 break;
             }
         }while(opcion!=15);  
             
     }
+    
+    
     
 }
