@@ -8,17 +8,21 @@ public class Circulo extends Shape {
     
     @Override
     public  void calcularArea(){
+        System.out.println("***Circulo***");
         System.out.println("Calculemos el area de un circulo");
-        System.out.println("Ingresa la medida del radio: ");
+        System.out.print("Ingresa la medida del radio: ");
         int radio = leer.nextInt();
-        super.area =3.1416*radio;
-        System.out.println("El area del triangulo es: "+ super.area);
+        System.out.println("");
+        super.area =3.1416*(radio*radio);
+        System.out.println("El area del circulo es: "+ super.area);
     }
     @Override
     public void calcularPerimetro(){
-         System.out.println("Ingresa la medida del radio: ");
+         System.out.print("Ingresa la medida del radio: ");
         int radio = leer.nextInt();
-        super.area =(2*3.1416)*radio;
-        System.out.println("El area del triangulo es: "+ super.area);
+        System.out.println("");
+        super.perimetro =(2*3.1416)*radio;
+        System.out.println("El perimetro del circulo es: "+ super.perimetro);
+        
     }
 }
