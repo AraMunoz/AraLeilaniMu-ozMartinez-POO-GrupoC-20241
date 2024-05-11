@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Pedro Lopez",
+    "edad": 90,
+    "padecimiento": "Infeccion en vias respiratorias",
+    "cuentaConSeguro": true
+  },
+  {
+    "name": "Margarita Sanchez",
+    "edad": 30,
+    "padecimiento": "Parto prematuro",
+    "cuentaConSeguro": true
+  },
+  {
+    "name": "Karla Perez",
+    "edad": 20,
+    "padecimiento": "Fractura de tibia",
+    "cuentaConSeguro": false
+  },
+  {
+    "name": "Wendy Saucedo",
+    "edad": 17,
+    "padecimiento": "Deshidratacion",
+    "cuentaConSeguro": true
+  }
+
+]
