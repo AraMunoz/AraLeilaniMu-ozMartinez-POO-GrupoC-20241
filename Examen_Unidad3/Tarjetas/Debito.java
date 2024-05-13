@@ -38,7 +38,7 @@ public class Debito extends Tarjeta {
         double saldo = leer.nextDouble();
         System.out.println("Fecha de vencimiento: " + fechaVencimiento);
         Debito newTarjeta = new Debito(numeroTarjeta,CVV, clabe,saldo, fechaVencimiento,fechaCreacion);
-
+        Banco.listaTarjetas.add(newTarjeta);
         return newTarjeta;
     }
 
@@ -47,5 +47,20 @@ public class Debito extends Tarjeta {
                 "\nSu clabe interbancaria: %s " +
                 "\nSu fecha de vencimiento: %s \nSu saldo actual es: %.2f \nSu fecha de creacion es: %s ", getNumeroDeCuenta(), getCVV(), getClabeInterbancaria(), getFechaDeVencimiento().toString(), getSaldo(), this.fechaDeCreacion);
     }
+    public static void abonarDebito(){
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Realizar abono.");
+        System.out.println("Ingresar el número de tarjeta: ");
+        String numeroTarjeta = leer.nextLine();
+        for (Tarjeta buscarTarjeta : Banco.listaTarjetas) {
 
-}
+                System.out.println("Ingrese el monto a abonar: ");
+                double abono = leer.nextDouble();
+                System.out.println("Abono ingresado: " + abono);
+                    double saldoAFavor = buscarTarjeta.getSaldo() + abono;
+                    buscarTarjeta.setSaldo(saldoAFavor);
+                    System.out.println("Abono realizado con éxito. Nuevo saldo: " + saldoAFavor);
+
+            }
+        }
+    }

@@ -1,0 +1,41 @@
+
+[
+  {
+    "nombre": "Alejandra",
+    "apellidos": "Martinez Perez",
+    "apodo": "Ale",
+    "edad": 49,
+    "numeroDeHijos": 3,
+    "hijos": [
+      {
+        "nombre": "Juan",
+        "edad": 20
+      },
+      {
+        "nombre": "Maria",
+        "edad": 25
+      },
+      {
+        "nombre": "Marcela",
+        "edad": 22
+      }
+    ]
+  },
+      {
+        "nombre": "Margarita",
+        "apellidos": "Lopez Ruiz",
+        "apodo": "Margi",
+        "edad": 30,
+        "numeroDeHijos": 2,
+        "hijos": [
+          {
+            "nombre": "Linda",
+            "edad": 2
+          },
+          {
+            "nombre": "Paola",
+            "edad": 8
+          }
+    ]
+  }
+]

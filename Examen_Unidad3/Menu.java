@@ -274,7 +274,9 @@ public class Menu {
             System.out.println("2) Mostrar lista de clientes");
             System.out.println("3) Modificar clientes");
             System.out.println("4) Eliminar clientes");
-            System.out.println("5) Cerrar sesión.");
+            System.out.println("5) Ver solicitudes de tarjetas");
+            System.out.println("6) Autorizar / rechazar solicitudes de tarjetas.");
+            System.out.println("7) Cerrar sesión.");
 
             System.out.println("\nAcción a realizar: ");
             opcion = leer.nextInt();
@@ -294,8 +296,15 @@ public class Menu {
                 case 4:
                     Banco.eliminarCliente(usuario);
                     break;
-
                 case 5:
+                    Banco.mostrarSolicitudes();
+                    break;
+
+                case 6:
+                    Banco.autorizarSolicitud(usuario);
+                    break;
+
+                case 7:
                     System.out.println("\nCerrando sesión");
                     UsuarioEnSesion.obtenerInstancia().cerrarSesion();
                     iniciarSesion();
@@ -304,7 +313,7 @@ public class Menu {
                 default:
                     System.out.println("\nOpción no válida");
             }
-        } while (opcion != 5);
+        } while (opcion != 7);
     }
 
     public static void menuCliente(Sucursal sucursal) {
@@ -357,7 +366,17 @@ public class Menu {
                     break;
 
                 case 6:
-                    Banco.realizarAbono();
+                    int abono = 0;
+                    System.out.println("1. Abonar con debito");
+                    System.out.println("2. Abonar con credito");
+                    System.out.print("Como vas a realizar el abono: ");
+                    abono = leer.nextInt();
+                    if(abono==1)
+                        Debito.abonarDebito();
+
+                    else  {
+                        Tarjeta.abonar();
+                    }
                     break;
 
                 case 7:
