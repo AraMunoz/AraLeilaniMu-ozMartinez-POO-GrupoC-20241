@@ -1,28 +1,4 @@
 {
-  "GERENTE": [
-    {
-      "id": 4,
-      "nombre": "Alonso",
-      "apellido": "Hernandez",
-      "telefono": "4434856789",
-      "rol": "GERENTE",
-      "nombreUsuario": "AlonsoHerna",
-      "contrasena": "123",
-      "fechaNacimiento": "2000, 10, 24"
-    }
-  ],
-  "CLIENTE": [
-    {
-      "id": 5,
-      "nombre": "Alicia",
-      "apellido": "Montez",
-      "telefono": "554432123",
-      "rol": "CLIENTE",
-      "nombreUsuario": "Ali90",
-      "contrasena": "1234",
-      "fechaNacimiento": "23/04/1985"
-    }
-  ],
   "ASISTENTE": [
     {
       "sueldo": 250000.98,
@@ -36,19 +12,19 @@
       "nombreUsuario": "LeilanMartinez",
       "contrasena": "Www90",
       "fechaNacimiento": "2000, 04, 20"
-    },
+    }
+  ],
+  "CLIENTE": [],
+  "GERENTE": [
     {
-      "sueldo": 2000000.0,
-      "fechaInicio": {},
-      "RFC": "qwer455tt",
-      "id": 6,
-      "nombre": "Pablo",
-      "apellido": "Lopez",
-      "telefono": "44556789",
-      "rol": "ASISTENTE",
-      "nombreUsuario": "Pablito9",
-      "contrasena": "1234",
-      "fechaNacimiento": "03/02/1990"
+      "id": 4,
+      "nombre": "Alonso",
+      "apellido": "Hernandez",
+      "telefono": "4434856789",
+      "rol": "GERENTE",
+      "nombreUsuario": "AlonsoHerna",
+      "contrasena": "123",
+      "fechaNacimiento": "2000, 10, 24"
     }
   ]
 }

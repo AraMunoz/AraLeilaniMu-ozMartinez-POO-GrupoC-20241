@@ -1,0 +1,15 @@
+{
+  "ACCION": [
+    {
+      "ID": 1,
+      "titulo": "aa",
+      "fechaLanzamiento": "1987-02-01",
+      "precio": 1.0,
+      "editorial": "23e",
+      "genero": "ACCION",
+      "stock": 2
+    }
+  ],
+  "COMEDIA": [],
+  "TERROR": []
+}

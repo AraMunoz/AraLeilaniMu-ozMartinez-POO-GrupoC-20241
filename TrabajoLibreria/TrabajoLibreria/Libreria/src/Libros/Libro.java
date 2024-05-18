@@ -4,17 +4,26 @@ package Libros;
 import Libros.utils.constants.Genero;
 import java.util.ArrayList;
 import static libreria.Libreria.usuarios;
+
+import com.google.gson.annotations.Expose;
 import usuarios.Usuario;
 
 
 public abstract class  Libro {
+    @Expose
     private int ID;
+    @Expose
     private String titulo;
+    @Expose
     private String fechaLanzamiento;
     private String autor;
+    @Expose
     private double precio;
+    @Expose
     private String editorial;
+    @Expose
     private Genero genero;
+    @Expose
     private int stock;
    public static int CODIGOLIBRE = 1;
 /*Stream: Es una coleccion de datos que nos permite concatenar funciones como : filter*/

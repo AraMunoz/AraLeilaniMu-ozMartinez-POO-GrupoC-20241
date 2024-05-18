@@ -8,6 +8,8 @@ package Libros;
 import Libros.utils.LibrosUtils;
 import Libros.utils.constants.TerrorSubgenero;
 import Libros.utils.constants.Genero;
+import libreria.Libreria;
+
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
@@ -56,6 +58,7 @@ public class LibroTerror extends Libro{
         
         LibroTerror newLibroTerror = new LibroTerror(nombre, fecha.toString(), autor, precio, editorial, stock, subgenero);
         libreria.Libreria.libros.get(Genero.TERROR).add(newLibroTerror);
+        Libreria.serializar();
         System.out.println("El libro ha sido registrado correctamente. Su ID es: "+ newLibroTerror.getID());
     }
     

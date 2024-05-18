@@ -9,6 +9,8 @@ import Libros.utils.LibrosUtils;
 import Libros.utils.constants.Genero;
 import Libros.utils.constants.ClasificacionLibro;
 import Libros.utils.constants.TerrorSubgenero;
+import libreria.Libreria;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -56,6 +58,7 @@ public class LibroAccion extends Libro{
         
         LibroAccion newLibroAccion = new LibroAccion(nombre, fecha.toString(), autor, precio, editorial, stock, clasificacion);
         libreria.Libreria.libros.get(Genero.ACCION).add(newLibroAccion);
+        Libreria.serializar();
         System.out.println("El libro ha sido registrado correctamente. Su ID es: "+ newLibroAccion.getID());
     }
     public static void eliminarLibroAccion()

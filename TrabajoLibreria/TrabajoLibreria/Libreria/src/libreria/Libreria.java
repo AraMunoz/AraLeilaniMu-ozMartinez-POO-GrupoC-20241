@@ -4,6 +4,7 @@ package libreria;
     Sirve para buscar un elemento y encontrarlo de manera rapida. Se le proporsiona una llave (Key) y por medio de esta accede al elemento. 
     
     */
+import Libros.Serializer.librosSerializer;
 import Libros.utils.constants.Genero;
 import Libros.Libro;
 
@@ -123,6 +124,7 @@ public class Libreria {
      
     public  static void serializar(){
         serializer.serialize(usuarios);
+        librosSerializer.serialize(libros);
     }
     
 }

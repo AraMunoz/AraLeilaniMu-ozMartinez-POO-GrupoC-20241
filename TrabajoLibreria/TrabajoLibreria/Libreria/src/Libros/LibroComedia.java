@@ -9,6 +9,8 @@ import Libros.utils.LibrosUtils;
 import Libros.utils.constants.ClasificacionLibro;
 import Libros.utils.constants.Genero;
 import Libros.utils.constants.TerrorSubgenero;
+import libreria.Libreria;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -39,6 +41,7 @@ public class LibroComedia extends Libro{
        int stock = Integer.parseInt(datosComun.get(5));
         LibroComedia newLibroComedia = new LibroComedia (nombre, fecha.toString(), autor, precio, editorial, stock);
         libreria.Libreria.libros.get(Genero.COMEDIA).add(newLibroComedia);
+        Libreria.serializar();
         System.out.println("El libro ha sido registrado correctamente. Su ID es: "+ newLibroComedia.getID());
     }
     public static void eliminarLibroComedia()
