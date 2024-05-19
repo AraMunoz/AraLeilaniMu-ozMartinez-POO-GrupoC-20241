@@ -1,0 +1,15 @@
+{
+  "COMEDIA": [],
+  "ACCION": [
+    {
+      "ID": 1,
+      "titulo": "Fantasy",
+      "fechaLanzamiento": "1986-12-12",
+      "precio": 23.0,
+      "editorial": "tu",
+      "genero": "ACCION",
+      "stock": 12
+    }
+  ],
+  "TERROR": []
+}

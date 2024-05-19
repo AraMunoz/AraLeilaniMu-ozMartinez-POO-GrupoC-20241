@@ -1,0 +1,27 @@
+{
+  "COMEDIA": [],
+  "ACCION": [
+    {
+      "ID": 1,
+      "titulo": "Fantasy",
+      "fechaLanzamiento": "1986-12-12",
+      "autor": "Yo",
+      "precio": 23.0,
+      "editorial": "Tu",
+      "genero": "ACCION",
+      "stock": 12
+    }
+  ],
+  "TERROR": [
+    {
+      "ID": 1,
+      "titulo": "Terror1",
+      "fechaLanzamiento": "1989-12-12",
+      "autor": "Pablo",
+      "precio": 1223.0,
+      "editorial": "123e",
+      "genero": "TERROR",
+      "stock": 12
+    }
+  ]
+}
