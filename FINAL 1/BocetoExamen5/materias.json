@@ -1,0 +1,164 @@
+[
+  {
+    "nombre": "Programación 1",
+    "id": 0,
+    "carrera": "ISC",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Probabilidad 1",
+    "id": 1,
+    "carrera": "ISC",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Cálculo 1",
+    "id": 2,
+    "carrera": "ISC",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Programación 2",
+    "id": 3,
+    "carrera": "ISC",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Probabilidad 2",
+    "id": 4,
+    "carrera": "ISC",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Cálculo 2",
+    "id": 5,
+    "carrera": "ISC",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Programación 3",
+    "id": 6,
+    "carrera": "ISC",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Probabilidad 3",
+    "id": 7,
+    "carrera": "ISC",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Cálculo 3",
+    "id": 8,
+    "carrera": "ISC",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Estadística 1",
+    "id": 9,
+    "carrera": "IMAT",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Contabilidad 1",
+    "id": 10,
+    "carrera": "IMAT",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Cálculo 1",
+    "id": 11,
+    "carrera": "IMAT",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Estadística 2",
+    "id": 12,
+    "carrera": "IMAT",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Contabilidad 2",
+    "id": 13,
+    "carrera": "IMAT",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Cálculo 2",
+    "id": 14,
+    "carrera": "IMAT",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Estadística 3",
+    "id": 15,
+    "carrera": "IMAT",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Contabilidad 3",
+    "id": 16,
+    "carrera": "IMAT",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Cálculo 3",
+    "id": 17,
+    "carrera": "IMAT",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Redes 1",
+    "id": 18,
+    "carrera": "ELC",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Circuitos 1",
+    "id": 19,
+    "carrera": "ELC",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Cálculo 1",
+    "id": 20,
+    "carrera": "ELC",
+    "nombreSemestre": 1
+  },
+  {
+    "nombre": "Redes 2",
+    "id": 21,
+    "carrera": "ELC",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Circuitos 2",
+    "id": 22,
+    "carrera": "ELC",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Cálculo 2",
+    "id": 23,
+    "carrera": "ELC",
+    "nombreSemestre": 2
+  },
+  {
+    "nombre": "Redes 3",
+    "id": 24,
+    "carrera": "ELC",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Circuitos 3",
+    "id": 25,
+    "carrera": "ELC",
+    "nombreSemestre": 3
+  },
+  {
+    "nombre": "Cálculo 3",
+    "id": 26,
+    "carrera": "ELC",
+    "nombreSemestre": 3
+  }
+]

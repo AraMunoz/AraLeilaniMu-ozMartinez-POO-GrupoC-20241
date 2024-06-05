@@ -1,0 +1,62 @@
+{
+  "ESTUDIANTE": [
+    {
+      "semestre": 0,
+      "promedio": 0.0,
+      "misMaterias": [],
+      "esAprobado": false,
+      "estaEnGrupo": false,
+      "nombre": "Simón",
+      "apellidoPaterno": "Alvaro",
+      "apellidoMaterno": "Zacarías",
+      "fechaNacimiento": "09/09/2000",
+      "CURP": "PAJUZA0909200POO3",
+      "sueldo": 0.0,
+      "numeroDeControl": "SELC0",
+      "estado": "MICHOACÁN",
+      "ciudad": "MORELIA",
+      "direccion": "SU CASA",
+      "rol": "ESTUDIANTE",
+      "contrasena": "PATASDEPES",
+      "carrera": "ELC"
+    }
+  ],
+  "PROFESOR": [
+    {
+      "nombre": "Josefina",
+      "apellidoPaterno": "ApellidoPaterno",
+      "apellidoMaterno": "ApellidoMaterno",
+      "fechaNacimiento": "FechaNacimiento",
+      "CURP": "CURP",
+      "RFC": "RFC",
+      "sueldo": 10000.0,
+      "numeroDeControl": "NumeroDeControlELC",
+      "fechaDeRegistro": "FechaDeRegistro",
+      "estado": "Estado",
+      "ciudad": "Ciudad",
+      "direccion": "Dirección",
+      "rol": "PROFESOR",
+      "contrasena": "Contraseña",
+      "carrera": "ELC"
+    }
+  ],
+  "COORDINADOR": [
+    {
+      "nombre": "Nadia",
+      "apellidoPaterno": "Rosales",
+      "apellidoMaterno": "Pérez",
+      "fechaNacimiento": "1977/08/17",
+      "CURP": "ROPN770817HMIC",
+      "RFC": "ROPN770817POO3",
+      "sueldo": 20000.0,
+      "numeroDeControl": "N19ELC0",
+      "fechaDeRegistro": "27/09/2023",
+      "estado": "MICHOACAN",
+      "ciudad": "Morelia",
+      "direccion": "Romano Picutti 36",
+      "rol": "COORDINADOR",
+      "contrasena": "carlos123",
+      "carrera": "ELC"
+    }
+  ]
+}

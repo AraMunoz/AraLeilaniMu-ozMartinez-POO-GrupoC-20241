@@ -1,0 +1,65 @@
+{
+  "ESTUDIANTE": [
+    {
+      "semestre": 0,
+      "promedio": 0.0,
+      "misMaterias": [],
+      "esAprobado": false,
+      "estaEnGrupo": false,
+      "nombre": "Pancracia",
+      "apellidoPaterno": "Juarez",
+      "apellidoMaterno": "Zacarías",
+      "fechaNacimiento": "09/09/2000",
+      "CURP": "PAJUZA0909200POO3",
+      "sueldo": 0.0,
+      "numeroDeControl": "PISC0",
+      "estado": "MICHOACÁN",
+      "ciudad": "MORELIA",
+      "direccion": "SU CASA",
+      "rol": "ESTUDIANTE",
+      "contrasena": "PATASDEPES",
+      "carrera": "ISC",
+      "sexo": "Mujer"
+    }
+  ],
+  "PROFESOR": [
+    {
+      "nombre": "Poncho",
+      "apellidoPaterno": "ApellidoPaterno",
+      "apellidoMaterno": "ApellidoMaterno",
+      "fechaNacimiento": "FechaNacimiento",
+      "CURP": "CURP",
+      "RFC": "RFC",
+      "sueldo": 10000.0,
+      "numeroDeControl": "NumeroDeControlISC",
+      "fechaDeRegistro": "FechaDeRegistro",
+      "estado": "Estado",
+      "ciudad": "Ciudad",
+      "direccion": "Dirección",
+      "rol": "PROFESOR",
+      "contrasena": "Contraseña",
+      "carrera": "ISC",
+      "sexo": "Hombre"
+    }
+  ],
+  "COORDINADOR": [
+    {
+      "nombre": "Bertin",
+      "apellidoPaterno": "García",
+      "apellidoMaterno": "Olmos",
+      "fechaNacimiento": "1975/10/21",
+      "CURP": "GAOB751021HMIC",
+      "RFC": "GAOB751021POO3",
+      "sueldo": 20000.0,
+      "numeroDeControl": "B19ISC0",
+      "fechaDeRegistro": "2024-05-27",
+      "estado": "MICHOACAN",
+      "ciudad": "Morelia",
+      "direccion": "José Frontera 210",
+      "rol": "COORDINADOR",
+      "contrasena": "bertin123",
+      "carrera": "ISC",
+      "sexo": "Hombre"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "ESTUDIANTE": [
+    {
+      "semestre": 0,
+      "promedio": 0.0,
+      "misMaterias": [],
+      "esAprobado": false,
+      "estaEnGrupo": false,
+      "nombre": "Ramona",
+      "apellidoPaterno": "Sanchez",
+      "apellidoMaterno": "Barriles",
+      "fechaNacimiento": "09/09/2000",
+      "CURP": "PAJUZA0909200POO3",
+      "sueldo": 0.0,
+      "numeroDeControl": "RIMAT0",
+      "estado": "MICHOACÁN",
+      "ciudad": "MORELIA",
+      "direccion": "SU CASA",
+      "rol": "ESTUDIANTE",
+      "contrasena": "PEPSI",
+      "carrera": "IMAT",
+      "sexo": "Mujer"
+    }
+  ],
+  "PROFESOR": [
+    {
+      "nombre": "María",
+      "apellidoPaterno": "ApellidoPaterno",
+      "apellidoMaterno": "ApellidoMaterno",
+      "fechaNacimiento": "FechaNacimiento",
+      "CURP": "CURP",
+      "RFC": "RFC",
+      "sueldo": 10000.0,
+      "numeroDeControl": "NumeroDeControlIMAT",
+      "fechaDeRegistro": "FechaDeRegistro",
+      "estado": "Estado",
+      "ciudad": "Ciudad",
+      "direccion": "Dirección",
+      "rol": "PROFESOR",
+      "contrasena": "Contraseña",
+      "carrera": "IMAT",
+      "sexo": "Mujer"
+    }
+  ],
+  "COORDINADOR": [
+    {
+      "nombre": "Camila",
+      "apellidoPaterno": "Aguilar",
+      "apellidoMaterno": "Cortéz",
+      "fechaNacimiento": "1980/02/12",
+      "CURP": "AGCC800212MGRO",
+      "RFC": "AGCC800212POO3",
+      "sueldo": 30000.0,
+      "numeroDeControl": "C19IMAT0",
+      "fechaDeRegistro": "19/05/2020",
+      "estado": "GUANAJUATO",
+      "ciudad": "Acámbaro",
+      "direccion": "Av. Francisco I. Madero 560",
+      "rol": "COORDINADOR",
+      "contrasena": "camila123",
+      "carrera": "IMAT",
+      "sexo": "Mujer"
+    }
+  ]
+}
